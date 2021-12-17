@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/static/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/twinklecss@1.1.0/twinkle.min.css"/>
+        <title>Dashboard</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16x16.png">
+    <link rel="manifest" href="static/images/site.webmanifest">
+
+  </head>
+  <body>
+    <section class="section">
+      <div class="tabs">
+         <ul class="tabs-menu">
+          <li class="is-active" data-target="first-tab"><a>Upload car</a></li>
+          <li data-target="second-tab"><a>Delete Car</a></li>
+          <li data-target="third-tab"><a>Update car</a></li>
+      </div>
+      <div class="tab-content" id="first-tab">
+        <div class='column is-8 is-offset-2'>
+        <div>
+            <h1 class='title 
+                has-text-centered'>Upload Car</h1>
+        </div>
+          <br>
+          <div class="container">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST" action="/upload_cars/"  enctype="multipart/form-data" >
+          
+          <div class="field">
+            <div class="control">
+              <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="price" placeholder="Price" required>
+            </div>
+          </div>
+
+          <div class="field">
+              <div class="control">
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="model" placeholder="Model" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="car_name" placeholder="Car Name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="car_description" placeholder=" Car Description" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="car_details" placeholder="Car Details" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_1" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_2" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_3" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_4" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+            
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_5" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_6" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_7" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_8" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_9" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+            <div class="field">
+              <div class="file">
+                  <label class="file-label">
+                    <input class="file-input" type="file" name="car_image_10" required>
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                  </label>
+                </div>    
+            </div>
+          <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+               + Post
+            </button>
+          </div>
+        </form>
+          </div>
+
+        <!-- <div class='columns is-mobile is-centered'>
+            <div class='column is-5'>
+                <div class='list'>
+                    <ul>
+                        {% for teacher in teachers %}
+                          <div class='list-item'>
+                            {% for i, v in teacher.items() %}
+                              <li>{{i}}: &nbsp;&nbsp;{{v}}</li>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+      </div>
+
+      <!-- tab 2 -->
+      <div class="tab-content" id="second-tab">
+
+      <div class='container'>
+        <div>
+            <h1 class='title 
+                has-text-centered'>Delete car</h1>
+        </div>
+          <br>
+          <div class="columns is-mobile is-centered">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST" action="/admin/delete" >
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="student">
+              paste key to delete
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="student" name="delete" type="text">
+          </div>
+          <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+               + delete
+            </button>
+          </div>
+        </form>
+          </div>
+
+        <div class='columns is-mobile is-centered'>
+            <div class='column is-5'>
+                <div class='list'>
+                    <ul>
+                        {% for item in items %}
+                          <div class='list-item'>
+                            <p class="card-text"><b>Car Name:</b> {{ item.car_name }}</p>
+                            <p class="card-text"><b>Model:</b> {{ item.model }}</p>
+                            <p class="card-text"><b>Key:</b> {{ item.key }}</p>
+                        </div>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>         
+             
+ 
+      </div>
+      <!-- tab 3 -->
+        <!-- <div class="tab-content" id="third-tab">
+            <div class='container'>
+        <div>
+            <h1 class='title 
+                has-text-centered'>Course Operations</h1>
+        </div>
+          <br>
+          <div class="columns is-mobile is-centered">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST" action="/course/delete" >
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="course">
+              paste key to delete
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="course" name="course" type="text">
+          </div>
+          <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+               + delete
+            </button>
+          </div>
+        </form>
+          </div>
+
+        <div class='columns is-mobile is-centered'>
+            <div class='column is-5'>
+                <div class='list'>
+                    <ul>
+                        {% for course in courses %}
+                          <div class='list-item'>
+                            {% for i, v in course.items() %}
+                              <li>{{i}}: &nbsp;&nbsp;{{v}}</li>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div> -->
+
+    </section> 
+<script>
+    const tabSystem = {
+    init(){
+        document.querySelectorAll('.tabs-menu').forEach(tabMenu => {
+            Array.from(tabMenu.children).forEach((child, ind) => {
+                child.addEventListener('click', () => {
+                    tabSystem.toggle(child.dataset.target);
+                });
+                if(child.className.includes('is-active')){
+                    tabSystem.toggle(child.dataset.target);
+                }
+            });
+        });
+    },
+    toggle(targetId){
+        document.querySelectorAll('.tab-content').forEach(contentElement=>{
+            contentElement.style.display = contentElement.id === targetId ? 'block' : 'none';
+            document.querySelector(`[data-target="${contentElement.id}"]`).classList[contentElement.id === targetId ? 'add' : 'remove']('is-active');
+        })
+    },
+};
+// use it
+tabSystem.init()
+</script>
+  </body>
+</html>
